@@ -1,0 +1,44 @@
+.img-caption {
+  bottom: 10px;
+  width: 80%;
+  left: 10%;
+  transition: 0.3s;
+}
+
+.col-md-4:hover .img-caption {
+  z-index: -1;
+}
+
+#lightBoxContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#lightBox {
+  width: 50%;
+  height: 500px;
+  background-size: cover;
+  background-image: url(../img/post-1.jpg);
+}
+
+#lightBox > i {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  #lightBox {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #lightBox {
+    width: 96%;
+    height: 80vh;
+    cursor: grab;
+  }
+}
